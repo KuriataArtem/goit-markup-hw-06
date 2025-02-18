@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>WebStudio</title>
     <link
       rel="stylesheet"
@@ -50,15 +50,15 @@
             </li>
           </ul>
         </address>
-        <button class="burger-btn" type="button">
+        <button data-menu-open  class="burger-btn" type="button">
           <svg class="burger-icon" width="24" height="24">
             <use href="../images/icons.svg#icon-heroicons-solid_menu"></use>
           </svg>
         </button>
       </div>
-      <div class="mobile-modal-menu">
+      <div data-menu class="mobile-modal-menu">
         <div class="container mobile-menu-container">
-          <button class="mobile-menu-close" type="button">
+          <button data-menu-close class="mobile-menu-close" type="button">
             <svg class="icon-button" width="8" height="8">
               <use href="./images/icons.svg#icon-close"></use>
             </svg>
@@ -127,7 +127,7 @@
       <section class="section-hero">
         <div class="container container-hero">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button type="button" class="hero-button">Order Service</button>
+          <button data-modal-open type="button" class="hero-button">Order Service</button>
         </div>
       </section>
       <!-- info -->
@@ -714,9 +714,9 @@
         </div>
       </div>
     </footer>
-    <!-- <div class="container-backdrop">
+    <div data-modal class="container-backdrop is-open">
       <div class="modal">
-        <button class="modal-close-button" type="button">
+        <button data-modal-close class="modal-close-button" type="button">
           <svg class="icon-button" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
@@ -790,13 +790,18 @@
                   <use href="./images/icons.svg#icon-check"></use>
                 </svg>
               </span>
-              I accept the terms and conditions of the
-              <a href="" class="policy-link">Privacy Policy</a>
+              <span class="wrapper-priv-pol">
+                I accept the terms and conditions of the
+                <a class="privacy-policy" href=""> Privacy Policy</a>
+              </span>
             </label>
           </div>
           <button type="submit" class="modal-send-button">Send</button>
         </form>
       </div>
-    </div> -->
+    </div>
+    
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

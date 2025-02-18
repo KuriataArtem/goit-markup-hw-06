@@ -217,10 +217,14 @@ a {
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.mobile-modal-menu.is-open {
+.mobile-modal-menu.is-open-menu {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
+}
+
+.mobile-modal-menu.is-open-menu {
+  transform: translateX(0);
 }
 
 .mobile-menu-container {
@@ -1007,11 +1011,11 @@ a {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transition-duration: 200ms;
+  
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.container-backdrop.is-open {
+.container-backdrop.is-open-modal {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
@@ -1023,8 +1027,8 @@ a {
   left: 50%;
   transform: translate(-50%, -50%);
 
-  width: 100%;
-  max-width: 288px;
+  /* width: 100%; */
+  width: 288px;
   min-height: 623px;
   box-sizing: border-box;
   border-radius: 4px;
@@ -1040,8 +1044,8 @@ a {
   padding-left: 16px;
   
 }
-.backdrop:not(.is-open) .modal {
-  transform: translate(-50%, -100%);
+.container-backdrop:not(.is-open-modal) .modal {
+  transform: translate(-50%, -150%);
 }
 .modal-close-button {
   position: absolute;

@@ -975,10 +975,10 @@ a {
   .subscribe-input {
     width: 264px;
   }
-.subscribe-text {
-  text-align: start;
+  .subscribe-text {
+    text-align: start;
+  }
 }
-
 @media screen and (min-width: 1158px) {
   .footer-section {
     padding: 100px 0;
@@ -988,11 +988,10 @@ a {
     padding: 0 15px;
     gap: 0;
     align-items: baseline;
-
   }
 
   .container-footer-svg {
-  margin-right: 120px;
+    margin-right: 120px;
   }
   .subscribe-form-container {
     margin-left: auto;
@@ -1007,11 +1006,11 @@ a {
   height: 100%;
 
   background-color: rgba(46, 47, 66, 0.4);
-  z-index: 999;
+  z-index: 1000;
   opacity: 0;
-  visibility: hidden;
   pointer-events: none;
-  
+  visibility: hidden;
+
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1028,9 +1027,10 @@ a {
   transform: translate(-50%, -50%);
 
   /* width: 100%; */
-  width: 288px;
   min-height: 623px;
-  box-sizing: border-box;
+  width: 288px;
+
+  /* box-sizing: border-box; */
   border-radius: 4px;
 
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
@@ -1038,11 +1038,7 @@ a {
   background-color: #fcfcfc;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 999;
-  padding-top: 72px;
-  padding-bottom: 24px;
-  padding-right: 16px;
-  padding-left: 16px;
-  
+  padding: 72px 16px 24px 16px;
 }
 .container-backdrop:not(.is-open-modal) .modal {
   transform: translate(-50%, -150%);
@@ -1159,8 +1155,8 @@ a {
 /* .modal-textarea:focus-within {
   border-color: #4d5ae5;
 } */
- .modal-textarea:focus,
- .modal-textarea:hover {
+.modal-textarea:focus,
+.modal-textarea:hover {
   border-color: #4d5ae5;
 }
 .checkbox-container {
@@ -1174,7 +1170,7 @@ a {
 }
 
 .modal-check-text {
-margin-bottom: 24px;
+  margin-bottom: 24px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1211,12 +1207,11 @@ margin-bottom: 24px;
 }
 
 .privacy-policy {
-  
   line-height: 1.33;
   text-decoration: underline;
-  
+
   color: #4d5ae5;
-  
+
   font-size: 12px;
   letter-spacing: 0.04em;
 }
@@ -1238,7 +1233,7 @@ margin-bottom: 24px;
   cursor: pointer;
   transition-duration: 200ms;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
- 
+
   display: block;
   margin: 0 auto;
 }

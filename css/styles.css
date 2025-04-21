@@ -128,7 +128,7 @@ button {
   .page-nav .link-studio {
     position: relative;
     display: block;
-    padding: 16px 0;
+    padding: 24px 0;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -141,7 +141,7 @@ button {
   .page-nav .link {
     position: relative;
     display: block;
-    padding: 16px 0;
+    padding: 24px 0;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -620,7 +620,7 @@ button {
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)
         ),
-        url('../images/header/people-office.jpg');
+        url('../images/header/people-office@2x.jpg');
     }
   }
 
@@ -918,6 +918,8 @@ textarea {
   .modal {
     min-height: 584px;
     width: 408px;
+    padding-left: 24px;
+    padding-right: 24px;
   }
 }
 
@@ -1045,7 +1047,7 @@ textarea {
   align-items: center;
   flex-direction: column;
   flex-wrap: wrap;
-  gap: 24px;
+  gap: 74px;
 }
 
 .our-team-item {

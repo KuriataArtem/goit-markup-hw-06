@@ -1164,7 +1164,8 @@ textarea {
 
 .partfolio-list {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
@@ -1172,6 +1173,9 @@ textarea {
 }
 /* формла - calc((100% - кільксть маржинів у рядку) / кількість елементів у рядку) */
 .partfolio-list-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 100%;
   max-width: 356px;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
@@ -1257,7 +1261,7 @@ textarea {
   }
 
   .partfolio-img {
-    max-width: 356px;
+    width: 100%;
     height: 100%;
   }
 }
